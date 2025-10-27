@@ -48,7 +48,7 @@ repo_gpgcheck = 1
 
 [pgdg-rhel9-sysupdates]
 name=PostgreSQL Supplementary ucommon RPMs for RHEL / Rocky / AlmaLinux $releasever - $basearch
-baseurl=https://download.postgresql.org/pub/repos/yum/common/pgdg-rocky9-sysupdates/redhat/rhel-$releasever-$basearch
+baseurl=https://download.postgresql.org/pub/repos/yum/common/pgdg-rhel9-sysupdates/redhat/rhel-$releasever-$basearch
 enabled=0
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
