@@ -1,7 +1,7 @@
 config_opts['chroot_setup_cmd'] = " install @{% if mirrored %}buildsys-{% endif %}build bash bzip2 coreutils cpio diffutils findutils gawk glibc-minimal-langpack grep gzip info lua patch pgdg-srpm-macros python3 redhat-rpm-config rpm-build sed tar unzip util-linux which xz"
 config_opts['macros']['%__brp_check_rpaths'] = "/usr/bin/true"
 
-config_opts['releasever'] = '43'
+config_opts['releasever'] = '44'
 config_opts['root'] = 'pgdg-fedora-rawhide-{{ releasever }}-{{ target_arch }}'
 
 config_opts['description'] = 'PGDG-Fedora {{ releasever }}'
