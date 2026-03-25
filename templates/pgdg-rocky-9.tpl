@@ -107,14 +107,6 @@ gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
 
-[pgdg13]
-name=PostgreSQL 13 for RHEL / Rocky / AlmaLinux $releasever - $basearch
-baseurl=https://download.postgresql.org/pub/repos/yum/13/redhat/rhel-$releasever-$basearch
-enabled=1
-gpgcheck=1
-gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
-repo_gpgcheck = 1
-
 # PGDG RHEL / Rocky / AlmaLinux Updates Testing common repositories.
 
 [pgdg-common-testing]
@@ -126,7 +118,15 @@ gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
 
 # PGDG RHEL / Rocky / AlmaLinux Updates Testing repositories. (These packages should not be used in production)
-# Available for 13 and above.
+# Available for 14 and above.
+
+[pgdg19-updates-testing]
+name=PostgreSQL 19 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Updates testing
+baseurl=https://download.postgresql.org/pub/repos/yum/testing/19/redhat/rhel-$releasever-$basearch
+enabled=0
+gpgcheck=0
+gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
+repo_gpgcheck = 1
 
 [pgdg18-updates-testing]
 name=PostgreSQL 18 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Updates testing
@@ -168,14 +168,6 @@ gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
 
-[pgdg13-updates-testing]
-name=PostgreSQL 13 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Updates testing
-baseurl=https://download.postgresql.org/pub/repos/yum/testing/13/redhat/rhel-$releasever-$basearch
-enabled=0
-gpgcheck=1
-gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
-repo_gpgcheck = 1
-
 # PGDG Red Hat Enterprise Linux / Rocky SRPM testing common repository
 
 [pgdg-source-common]
@@ -197,6 +189,14 @@ gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
 
 # PGDG Source RPMs (SRPMS), and their testing repositories:
+
+[pgdg19-source-updates-testing]
+name=PostgreSQL 19 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Source updates testing
+baseurl=https://download.postgresql.org/pub/repos/yum/srpms/testing/19/redhat/rhel-$releasever-$basearch
+enabled=0
+gpgcheck=0
+gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
+repo_gpgcheck = 1
 
 [pgdg18-source-updates-testing]
 name=PostgreSQL 18 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Source updates testing
@@ -270,22 +270,6 @@ gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
 
-[pgdg13-source]
-name=PostgreSQL 13 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Source
-baseurl=https://download.postgresql.org/pub/repos/yum/srpms/13/redhat/rhel-$releasever-$basearch
-enabled=0
-gpgcheck=1
-gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
-repo_gpgcheck = 1
-
-[pgdg13-source-updates-testing]
-name=PostgreSQL 13 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Source updates testing
-baseurl=https://download.postgresql.org/pub/repos/yum/srpms/testing/13/redhat/rhel-$releasever-$basearch
-enabled=0
-gpgcheck=1
-gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
-repo_gpgcheck = 1
-
 # Debuginfo/debugsource repositories for the common repo
 
 [pgdg-common-debuginfo]
@@ -330,16 +314,8 @@ gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
 
-[pgdg13-debuginfo]
-name=PostgreSQL 13 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Debuginfo
-baseurl=https://dnf-debuginfo.postgresql.org/debug/13/redhat/rhel-$releasever-$basearch
-enabled=0
-gpgcheck=1
-gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
-repo_gpgcheck = 1
-
 # Debuginfo/debugsource packages for testing repos
-# Available for 13 and above.
+# Available for 14 and above.
 
 [pgdg18-updates-testing-debuginfo]
 name=PostgreSQL 18 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Debuginfo
@@ -376,14 +352,6 @@ repo_gpgcheck = 1
 [pgdg14-updates-testing-debuginfo]
 name=PostgreSQL 14 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Debuginfo
 baseurl=https://dnf-debuginfo.postgresql.org/testing/debug/14/redhat/rhel-$releasever-$basearch
-enabled=0
-gpgcheck=1
-gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
-repo_gpgcheck = 1
-
-[pgdg13-updates-testing-debuginfo]
-name=PostgreSQL 13 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Debuginfo
-baseurl=https://dnf-debuginfo.postgresql.org/testing/debug/13/redhat/rhel-$releasever-$basearch
 enabled=0
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
