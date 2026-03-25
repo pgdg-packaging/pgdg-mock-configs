@@ -341,6 +341,7 @@ metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$rele
 gpgkey=file:///usr/share/distribution-gpg-keys/fedora/RPM-GPG-KEY-fedora-{{ releasever }}-primary
 gpgcheck=1
 skip_if_unavailable=False
+exclude=postgresql*
 
 [updates-testing]
 name=updates-testing
@@ -349,6 +350,7 @@ enabled=0
 gpgkey=file:///usr/share/distribution-gpg-keys/fedora/RPM-GPG-KEY-fedora-{{ releasever }}-primary
 gpgcheck=1
 skip_if_unavailable=False
+exclude=postgresql*
 
 [fedora-debuginfo]
 name=fedora-debuginfo
