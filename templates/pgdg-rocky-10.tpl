@@ -120,6 +120,14 @@ repo_gpgcheck = 1
 # PGDG RHEL / Rocky / AlmaLinux Updates Testing repositories. (These packages should not be used in production)
 # Available for 14 and above.
 
+[pgdg20-updates-testing]
+name=PostgreSQL 20 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Updates testing
+baseurl=https://download.postgresql.org/pub/repos/yum/testing/20/redhat/rhel-$releasever-$basearch
+enabled=0
+gpgcheck=0
+gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
+repo_gpgcheck = 1
+
 [pgdg19-updates-testing]
 name=PostgreSQL 19 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Updates testing
 baseurl=https://download.postgresql.org/pub/repos/yum/testing/19/redhat/rhel-$releasever-$basearch
