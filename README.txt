@@ -10,4 +10,5 @@ Usage:
 
 - Building package on Fedora 41 and against PostgreSQL 17: sudo mock -r pgdg-fedora-41-pg17-x86_64 package.src.rpm
 - Building package on Rocky 9 and against PostgreSQL 16: sudo mock -r pgdg-rocky-9-pg16-x86_64 package.src.rpm
+- Building package on openSUSE Leap 16 and against PostgreSQL 17: sudo mock -r pgdg-opensuse-leap-16-pg17-x86_64 package.src.rpm
 
