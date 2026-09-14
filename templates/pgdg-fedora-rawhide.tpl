@@ -359,6 +359,7 @@ metalink=https://mirrors.fedoraproject.org/metalink?repo=rawhide&arch=$basearch
 gpgkey={{ rawhide_gpg_keys() }}
 gpgcheck=1
 skip_if_unavailable=False
+exclude=postgresql*
 
 [fedora-debuginfo]
 name=Fedora Rawhide - Debug
