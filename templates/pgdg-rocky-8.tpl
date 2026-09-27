@@ -6,6 +6,9 @@ config_opts['releasever'] = '8'
 config_opts['package_manager'] = 'dnf'
 config_opts['extra_chroot_dirs'] = [ '/run/lock', ]
 config_opts['bootstrap_image'] = 'quay.io/rockylinux/rockylinux:8'
+# The default postgresql module stream in AppStream hides the PGDG postgresqlXX
+# packages via modular filtering, so the -devel BuildRequires cannot be installed:
+config_opts['module_setup_commands'] = [('disable', 'postgresql')]
 
 
 config_opts['dnf.conf'] = """
