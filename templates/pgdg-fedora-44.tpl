@@ -126,7 +126,7 @@ repo_gpgcheck = 1
 name=PostgreSQL 18 for Fedora $releasever - $basearch - Updates testing
 baseurl=https://download.postgresql.org/pub/repos/yum/testing/18/fedora/fedora-$releasever-$basearch
 enabled=0
-gpgcheck=0
+gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
 
