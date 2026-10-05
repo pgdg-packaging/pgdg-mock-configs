@@ -108,7 +108,7 @@ repo_gpgcheck = 1
 [pgdg-common-testing]
 name=PostgreSQL common testing RPMs for Fedora $releasever - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/testing/common/fedora/fedora-$releasever-$basearch
-enabled=1
+enabled=0
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
@@ -119,7 +119,7 @@ repo_gpgcheck = 1
 [pgdg20-updates-testing]
 name=PostgreSQL 20 for Fedora $releasever - $basearch - Updates testing
 baseurl=https://download.postgresql.org/pub/repos/yum/testing/20/fedora/fedora-$releasever-$basearch
-enabled=1
+enabled=0
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
@@ -135,7 +135,7 @@ repo_gpgcheck = 1
 [pgdg18-updates-testing]
 name=PostgreSQL 18 for Fedora $releasever - $basearch - Updates testing
 baseurl=https://download.postgresql.org/pub/repos/yum/testing/18/fedora/fedora-$releasever-$basearch
-enabled=1
+enabled=0
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
@@ -143,7 +143,7 @@ repo_gpgcheck = 1
 [pgdg17-updates-testing]
 name=PostgreSQL 17 for Fedora $releasever - $basearch - Updates testing
 baseurl=https://download.postgresql.org/pub/repos/yum/testing/17/fedora/fedora-$releasever-$basearch
-enabled=1
+enabled=0
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
@@ -151,7 +151,7 @@ repo_gpgcheck = 1
 [pgdg16-updates-testing]
 name=PostgreSQL 16 for Fedora $releasever - $basearch - Updates testing
 baseurl=https://download.postgresql.org/pub/repos/yum/testing/16/fedora/fedora-$releasever-$basearch
-enabled=1
+enabled=0
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
@@ -159,7 +159,7 @@ repo_gpgcheck = 1
 [pgdg15-updates-testing]
 name=PostgreSQL 15 for Fedora $releasever - $basearch - Updates testing
 baseurl=https://download.postgresql.org/pub/repos/yum/testing/15/fedora/fedora-$releasever-$basearch
-enabled=1
+enabled=0
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
@@ -167,7 +167,7 @@ repo_gpgcheck = 1
 [pgdg14-updates-testing]
 name=PostgreSQL 14 for Fedora $releasever - $basearch - Updates testing
 baseurl=https://download.postgresql.org/pub/repos/yum/testing/14/fedora/fedora-$releasever-$basearch
-enabled=1
+enabled=0
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1

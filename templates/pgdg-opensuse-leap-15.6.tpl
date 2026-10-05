@@ -120,7 +120,7 @@ repo_gpgcheck = 1
 [pgdg19-updates-testing]
 name=PostgreSQL 19 for openSUSE Leap $releasever - $basearch - Updates testing
 baseurl=https://download.postgresql.org/pub/repos/zypp/testing/19/suse/sles-$releasever-$basearch
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=https://zypp.postgresql.org/keys/PGDG-RPM-GPG-KEY-SLES15
 repo_gpgcheck = 1
