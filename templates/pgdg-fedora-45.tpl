@@ -46,7 +46,7 @@ user_agent={{ user_agent }}
 [pgdg-common]
 name=PostgreSQL common RPMs for Fedora $releasever - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/common/fedora/fedora-$releasever-$basearch
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
@@ -56,7 +56,7 @@ repo_gpgcheck = 1
 [pgdg18]
 name=PostgreSQL 18 for Fedora $releasever - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/18/fedora/fedora-$releasever-$basearch
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
@@ -64,7 +64,7 @@ repo_gpgcheck = 1
 [pgdg17]
 name=PostgreSQL 17 for Fedora $releasever - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/17/fedora/fedora-$releasever-$basearch
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
@@ -72,7 +72,7 @@ repo_gpgcheck = 1
 [pgdg16]
 name=PostgreSQL 16 for Fedora $releasever - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/16/fedora/fedora-$releasever-$basearch
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
@@ -80,7 +80,7 @@ repo_gpgcheck = 1
 [pgdg15]
 name=PostgreSQL 15 for Fedora $releasever - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/15/fedora/fedora-$releasever-$basearch
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
@@ -88,7 +88,7 @@ repo_gpgcheck = 1
 [pgdg14]
 name=PostgreSQL 14 for Fedora $releasever - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/14/fedora/fedora-$releasever-$basearch
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
