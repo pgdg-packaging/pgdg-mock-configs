@@ -59,7 +59,7 @@ repo_gpgcheck = 1
 
 [pgdg-rhel10-extras]
 name=Extra packages to support some RPMs in the PostgreSQL RPM repo RHEL / Rocky / AlmaLinux $releasever - $basearch
-baseurl=https://download.postgresql.org/pub/repos/yum/common/pgdg-rhel$releasever-extras/redhat/rhel-$releasever-$basearch
+baseurl=https://download.postgresql.org/pub/repos/yum/extras/redhat/rhel-$releasever-$basearch
 enabled=0
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora

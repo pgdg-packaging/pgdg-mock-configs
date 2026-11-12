@@ -61,6 +61,17 @@ gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1
 
+# PGDG Fedora extras repository: Extra packages to support some RPMs in the PostgreSQL RPM repo
+# consul, haproxy, etc.
+
+[pgdg-fedora-extras]
+name=Extra packages to support some RPMs in the PostgreSQL RPM repo Fedora $releasever - $basearch
+baseurl=https://download.postgresql.org/pub/repos/yum/extras/fedora/fedora-$releasever-$basearch
+enabled=0
+gpgcheck=1
+gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
+repo_gpgcheck = 1
+
 # PGDG Fedora stable repositories
 
 [pgdg18]
