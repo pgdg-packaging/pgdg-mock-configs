@@ -67,6 +67,14 @@ repo_gpgcheck = 1
 
 # PGDG Red Hat Enterprise Linux / Rocky stable repositories:
 
+[pgdg19]
+name=PostgreSQL 19 for RHEL / Rocky / AlmaLinux $releasever - $basearch
+baseurl=https://download.postgresql.org/pub/repos/yum/19/redhat/rhel-$releasever-$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
+repo_gpgcheck = 1
+
 [pgdg18]
 name=PostgreSQL 18 for RHEL / Rocky / AlmaLinux $releasever - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/18/redhat/rhel-$releasever-$basearch
@@ -131,7 +139,7 @@ repo_gpgcheck = 1
 [pgdg19-updates-testing]
 name=PostgreSQL 19 for RHEL / Rocky / AlmaLinux $releasever - $basearch - Updates testing
 baseurl=https://download.postgresql.org/pub/repos/yum/testing/19/redhat/rhel-$releasever-$basearch
-enabled=1
+enabled=0
 gpgcheck=1
 gpgkey=https://yum.postgresql.org/keys/PGDG-RPM-GPG-KEY-Fedora
 repo_gpgcheck = 1

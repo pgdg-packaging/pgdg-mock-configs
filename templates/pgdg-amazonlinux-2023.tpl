@@ -53,6 +53,14 @@ repo_gpgcheck = 1
 
 # PGDG Amazon Linux stable repositories
 
+[pgdg19]
+name=PostgreSQL 19 for Amazon Linux $releasever - $basearch
+baseurl=https://download.postgresql.org/pub/repos/yum/19/amzn/amzn-$releasever-$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://download.postgresql.org/pub/repos/yum/keys/PGDG-RPM-GPG-KEY-AMAZONLINUX
+repo_gpgcheck = 1
+
 [pgdg18]
 name=PostgreSQL 18 for Amazon Linux $releasever - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/18/amzn/amzn-$releasever-$basearch
@@ -111,6 +119,14 @@ gpgcheck=1
 gpgkey=https://download.postgresql.org/pub/repos/yum/keys/PGDG-RPM-GPG-KEY-AMAZONLINUX
 repo_gpgcheck = 1
 
+[pgdg19-source]
+name=PostgreSQL 19 for Amazon Linux $releasever - $basearch - Source
+baseurl=https://dnf-srpms.postgresql.org/srpms/19/amzn/amzn-$releasever-$basearch
+enabled=0
+gpgcheck=1
+gpgkey=https://download.postgresql.org/pub/repos/yum/keys/PGDG-RPM-GPG-KEY-AMAZONLINUX
+repo_gpgcheck = 1
+
 [pgdg18-source]
 name=PostgreSQL 18 for Amazon Linux $releasever - $basearch - Source
 baseurl=https://dnf-srpms.postgresql.org/srpms/18/amzn/amzn-$releasever-$basearch
@@ -164,6 +180,14 @@ repo_gpgcheck = 1
 [pgdg-amzn2023-extras-debuginfo]
 name=Extra packages for Amazon Linux $releasever - $basearch - Debuginfo
 baseurl=https://dnf-debuginfo.postgresql.org/debug/extras/amzn/amzn-$releasever-$basearch
+enabled=0
+gpgcheck=1
+gpgkey=https://download.postgresql.org/pub/repos/yum/keys/PGDG-RPM-GPG-KEY-AMAZONLINUX
+repo_gpgcheck = 1
+
+[pgdg19-debuginfo]
+name=PostgreSQL 19 for Amazon Linux $releasever - $basearch - Debuginfo
+baseurl=https://dnf-debuginfo.postgresql.org/debug/19/amzn/amzn-$releasever-$basearch
 enabled=0
 gpgcheck=1
 gpgkey=https://download.postgresql.org/pub/repos/yum/keys/PGDG-RPM-GPG-KEY-AMAZONLINUX

@@ -65,6 +65,14 @@ repo_gpgcheck = 1
 
 # PGDG openSUSE Leap stable repositories
 
+[pgdg19]
+name=PostgreSQL 19 for openSUSE Leap $releasever - $basearch
+baseurl=https://download.postgresql.org/pub/repos/zypp/19/opensuse/leap-$releasever-$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://zypp.postgresql.org/keys/PGDG-RPM-GPG-KEY-SLES16
+repo_gpgcheck = 1
+
 [pgdg18]
 name=PostgreSQL 18 for openSUSE Leap $releasever - $basearch
 baseurl=https://download.postgresql.org/pub/repos/zypp/18/opensuse/leap-$releasever-$basearch
@@ -121,7 +129,7 @@ repo_gpgcheck = 1
 [pgdg19-updates-testing]
 name=PostgreSQL 19 for openSUSE Leap $releasever - $basearch - Updates testing
 baseurl=https://download.postgresql.org/pub/repos/zypp/testing/19/opensuse/leap-$releasever-$basearch
-enabled=1
+enabled=0
 gpgcheck=1
 gpgkey=https://zypp.postgresql.org/keys/PGDG-RPM-GPG-KEY-SLES16
 repo_gpgcheck = 1
@@ -184,6 +192,14 @@ repo_gpgcheck = 1
 [pgdg19-source-updates-testing]
 name=PostgreSQL 19 for openSUSE Leap $releasever - $basearch - Source updates testing
 baseurl=https://download.postgresql.org/pub/repos/zypp/srpms/testing/19/opensuse/leap-$releasever-$basearch
+enabled=0
+gpgcheck=1
+gpgkey=https://zypp.postgresql.org/keys/PGDG-RPM-GPG-KEY-SLES16
+repo_gpgcheck = 1
+
+[pgdg19-source]
+name=PostgreSQL 19 for openSUSE Leap $releasever - $basearch - Source
+baseurl=https://download.postgresql.org/pub/repos/zypp/srpms/19/opensuse/leap-$releasever-$basearch
 enabled=0
 gpgcheck=1
 gpgkey=https://zypp.postgresql.org/keys/PGDG-RPM-GPG-KEY-SLES16
@@ -264,6 +280,14 @@ gpgkey=https://zypp.postgresql.org/keys/PGDG-RPM-GPG-KEY-SLES16
 repo_gpgcheck = 1
 
 # Debuginfo/debugsource repositories for stable repos
+
+[pgdg19-debuginfo]
+name=PostgreSQL 19 for openSUSE Leap $releasever - $basearch - Debuginfo
+baseurl=https://zypp-debuginfo.postgresql.org/debug/19/opensuse/leap-$releasever-$basearch
+enabled=0
+gpgcheck=1
+gpgkey=https://zypp.postgresql.org/keys/PGDG-RPM-GPG-KEY-SLES16
+repo_gpgcheck = 1
 
 [pgdg18-debuginfo]
 name=PostgreSQL 18 for openSUSE Leap $releasever - $basearch - Debuginfo
